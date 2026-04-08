@@ -1,0 +1,238 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #000000;      
+    color: #ffffff;                 /* Testo bianco */
+    line-height: 1.6;              
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 10%;            
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;               
+}
+
+nav ul li {
+    margin-left: 30px;              
+}
+
+nav a {
+    color: white;
+    text-decoration: none;          
+    font-size: 18px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: row;            
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 70vh;               
+}
+
+.hero-text {
+    flex: 1;                        
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    color: #aaaaaa;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;      
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 20px;            
+}
+
+
+.about {
+    display: flex;
+    padding: 80px 10%;
+    background-color: #0f0f0f;      
+}
+
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    padding: 80px 10%;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 50px;            
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;                      
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;                        
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* chi sono */
+.pagina-titolo {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.pagina-titolo h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.bio-centrata {
+    padding: 60px 10%;
+    background-color: #000; 
+    color: #ffffff;
+}
+
+
+.contenitore-stretto {
+    max-width: 750px;
+    margin: 0 auto;   
+}
+
+
+.blocco-testo {
+    margin-bottom: 50px; 
+}
+
+.blocco-testo p {
+    font-size: 19px;    
+    line-height: 1.8;   
+    color: #ccc;        
+}
+
+
+.blocco-immagine {
+    margin-bottom: 60px; 
+}
+
+.blocco-immagine img {
+    width: 100%;         
+    height: auto;        
+    border-radius: 15px; 
+}
+
+
+
+
+/* contatti */
+.contatti-page {
+    padding: 80px 10%;
+    text-align: center; /* Centriamo tutto per questa pagina */
+    background-color: #000;
+}
+
+.contatti-page p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.lista-contatti {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+}
+
+.bottone-contatto {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.info-extra {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    
+    nav, .hero, .about, .projects-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    .about .numero {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
